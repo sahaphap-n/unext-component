@@ -1,0 +1,31 @@
+.sw_btn-close-toast {
+  color: white;
+  width: 14px !important;
+  height: 14px !important;
+}
+
+.sw_text-toast {
+  color: white !important;
+  font-size: 16px !important;
+  margin-right: 56px !important;
+}
+
+.sw_icon-toast {
+  scale: 0.75 !important;
+}
+
+.sw_popup-toast {
+  height: 56px !important;
+}
+
+.sw_success {
+  background: #4ace8f !important;
+}
+
+.sw_warning {
+  background: #f9c153 !important;
+}
+
+.sw_error {
+  background: #f0536f !important;
+}/*# sourceMappingURL=SwToast.css.map */

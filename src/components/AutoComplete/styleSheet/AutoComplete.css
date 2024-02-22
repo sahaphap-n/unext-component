@@ -1,0 +1,35 @@
+.autocomplete_container {
+  position: relative;
+}
+.autocomplete_container .search_icon {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: 3px;
+}
+.autocomplete_container button.close {
+  font-size: 40px !important;
+  color: #b7b7c0 !important;
+}
+.autocomplete_container .rbt-menu {
+  scrollbar-width: thin;
+  scrollbar-color: #ddd rgba(0, 0, 0, 0);
+}
+.autocomplete_container .rbt-menu::-webkit-scrollbar {
+  width: 5px;
+}
+.autocomplete_container .rbt-menu::-webkit-scrollbar-track {
+  background: white;
+}
+.autocomplete_container .rbt-menu::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 5px;
+  opacity: 1;
+}
+.autocomplete_container .rbt-menu .dropdown-item {
+  overflow: visible !important;
+}
+.autocomplete_container .dropdown-menu {
+  z-index: 2 !important;
+  min-width: auto !important;
+}/*# sourceMappingURL=AutoComplete.css.map */

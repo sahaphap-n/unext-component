@@ -1,0 +1,27 @@
+.editor-box .editorClassName {
+  height: 124px;
+  background: white;
+  border-radius: 6px;
+  overflow: auto;
+  border: 1px solid #dadada;
+  padding: 8px 12px;
+  resize: vertical;
+}
+.editor-box .editorClassName .DraftEditor-root {
+  height: 100px !important;
+}
+.editor-box .editorClassName .DraftEditor-editorContainer {
+  height: 100px !important;
+}
+.editor-box .editorClassName .public-DraftEditor-content {
+  height: 100px !important;
+}
+.editor-box .toolbarClassName {
+  border: 1px solid #dadada;
+  min-height: 35px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+.editor-box .public-DraftStyleDefault-block {
+  margin: 1.5px 0 !important;
+}/*# sourceMappingURL=RichTextEditor.css.map */

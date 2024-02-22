@@ -1,0 +1,17 @@
+.listHeader_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.listHeader_container h3 {
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  line-height: 21px;
+}
+
+.listHeader_list_total .total {
+  color: #45ba73;
+}
+.listHeader_list_total .text {
+  color: #65707a;
+}/*# sourceMappingURL=ListHeader.css.map */

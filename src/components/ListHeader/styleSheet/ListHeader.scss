@@ -1,0 +1,22 @@
+@import '../../../variables';
+
+.listHeader_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h3 {
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    line-height: 21px;
+  }
+}
+
+.listHeader_list_total {
+  .total {
+    color: $primary_color;
+  }
+  .text {
+    color: #65707a;
+  }
+}

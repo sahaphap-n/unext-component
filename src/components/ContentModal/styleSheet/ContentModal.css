@@ -1,0 +1,22 @@
+.contentModal_container {
+  position: relative;
+}
+.contentModal_container .header {
+  padding: 18px 0 0;
+}
+.contentModal_container .header h3 {
+  font-weight: 700;
+  font-size: 20px;
+}
+.contentModal_container .header hr {
+  margin: 16px 0 0 !important;
+}
+.contentModal_container .content {
+  padding: 16px 24px 0;
+}
+.contentModal_container .footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 0 0 24px;
+}/*# sourceMappingURL=ContentModal.css.map */

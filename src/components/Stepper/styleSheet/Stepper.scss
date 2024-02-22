@@ -1,0 +1,116 @@
+@import '../../../variables';
+
+section#stepper {
+  --circle-size: 32px;
+  --active-color: #1890ff;
+  --transition-duration: 300ms;
+
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+
+  .step-progress {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    position: relative;
+    // height: var(--circle-size);
+
+    .step-no {
+      position: relative;
+      min-height: var(--circle-size);
+      aspect-ratio: 1 / 1;
+      border-radius: 50%;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: background var(--transition-duration) ease;
+
+      &::before {
+        content: attr(data-step);
+        position: absolute;
+        border-radius: 50%;
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        background-color: #f0f0f0;
+        color: rgba(0, 0, 0, 0.65);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid transparent;
+      }
+    }
+
+    .step-label {
+      font-size: 14px;
+      user-select: none;
+      transition: color var(--transition-duration) ease;
+    }
+
+    &.active .step-no {
+      &::before {
+        background-color: #1890ff;
+        color: #fff;
+      }
+
+      &[data-progress]::before {
+        width: calc(100% - 4px);
+        aspect-ratio: 1 / 1;
+        border: 2px solid #fff;
+      }
+    }
+
+    &.finished {
+      &[role='button'] {
+        cursor: pointer;
+
+        &:hover {
+          // cursor: pointer;
+
+          .step-no::before {
+            border-color: var(--active-color);
+          }
+
+          .step-label {
+            color: var(--active-color);
+          }
+        }
+      }
+
+      .step-no::before {
+        content: '';
+        transition: border-color var(--transition-duration) ease;
+        background: url('../assets/checked.svg') no-repeat center, #e6f4ff;
+      }
+
+      &.active .step-no::before {
+        content: attr(data-step);
+        background-color: #1890ff;
+        color: #fff;
+        width: 100% !important;
+        aspect-ratio: 1 / 1 !important;
+        border: 0;
+      }
+    }
+
+    &:not(:last-child) {
+      flex: 1;
+
+      &::after {
+        content: '';
+        flex-grow: 1;
+        height: 2px;
+        background-color: #f0f0f0;
+        margin: 0 2.5%;
+        min-width: 40px;
+      }
+
+      &.lineActive::after {
+        background-color: var(--active-color);
+      }
+    }
+  }
+}

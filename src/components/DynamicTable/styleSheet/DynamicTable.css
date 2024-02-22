@@ -1,0 +1,57 @@
+.dynamicTable {
+  border: 1px solid #eaecf0;
+  border-radius: 10px;
+  border-collapse: collapse;
+}
+.dynamicTable table {
+  width: 100%;
+  border-radius: 10px;
+  background: #fff;
+  padding: 0 !important;
+  vertical-align: middle;
+}
+.dynamicTable table thead th {
+  background: #f3f9ff;
+  color: #95a0a8;
+}
+.dynamicTable table thead .sortBox .sorter {
+  margin-left: 10px;
+}
+.dynamicTable table thead .sortBox .sorter[data-sorttype=asc] .arrow-up {
+  fill: #1890ff;
+}
+.dynamicTable table thead .sortBox .sorter[data-sorttype=desc] .arrow-down {
+  fill: #1890ff;
+}
+.dynamicTable table thead .sortBox:hover {
+  background: rgba(0, 0, 0, 0.0392156863);
+  cursor: pointer;
+}
+.dynamicTable table tbody .row_can_click:hover {
+  background: rgba(0, 0, 0, 0.0392156863);
+  cursor: pointer;
+}
+.dynamicTable table tbody .row_checked {
+  background: rgba(69, 186, 115, 0.1490196078);
+}
+.dynamicTable table tfoot td {
+  font-weight: 600;
+}
+.dynamicTable table th,
+.dynamicTable table td {
+  padding: 10px;
+  border-bottom: 1px solid #eaecf0;
+  font-weight: 500;
+  line-height: 140%;
+}
+.dynamicTable table .none-hover:hover {
+  background: #fff !important;
+}
+.dynamicTable .bordered th,
+.dynamicTable .bordered td {
+  border: 1px solid #eaecf0;
+}
+.dynamicTable .pagination-container {
+  width: 100%;
+  padding: 10px;
+}/*# sourceMappingURL=DynamicTable.css.map */

@@ -1,0 +1,322 @@
+@import '../../../variables';
+
+//main
+.button_btn {
+  border-radius: 6px;
+  padding: 0 16px;
+  font-size: 14px;
+  min-width: 110px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+  &:focus{
+    box-shadow: none;
+  }
+}
+
+//size
+.button_sm {
+  height: 32px;
+}
+
+.button_md {
+  height: 40px;
+}
+
+//style color
+.button_primary {
+  background: $btn_bg_primary;
+  color: $btn_text_primary;
+  border: $btn_border_primary;
+  path {
+    fill: $btn_text_primary;
+  }
+
+  &:hover {
+    background: $btn_bg_primary_hover;
+    color: $btn_text_primary_hover;
+    border: $btn_border_primary_hover;
+    path {
+      fill: $btn_text_primary_hover;
+    }
+  }
+
+  &:active {
+    background: $btn_bg_primary_press;
+    color: $btn_text_primary_press;
+    border: $btn_border_primary_press;
+    path {
+      fill: $btn_text_primary_press;
+    }
+  }
+
+  &:disabled , &:disabled:hover  {
+    background: #f2f2f2;
+    color: #adadad;
+    border: 1px solid #adadad;
+
+    path {
+      fill: #adadad;
+    }
+
+  }
+}
+
+.button_dangerPrimary {
+  background: $status_color_fail;
+  border: $status_color_fail;
+
+  &:hover {
+    background: #fc4b6b;
+    border: #fc4b6b;
+  }
+
+  &:active {
+    background: #fc5674;
+    border: #fc5674;
+  }
+}
+
+.button_secondary {
+  background: $btn_bg_secondary;
+  color: $btn_text_secondary;
+  border: $btn_border_secondary;
+  path {
+    fill: $btn_text_secondary;
+  }
+
+  &:hover {
+    background: $btn_bg_secondary_hover;
+    color: $btn_text_secondary_hover;
+    border: $btn_border_secondary_hover;
+    path {
+      fill: $btn_text_secondary_hover;
+    }
+  }
+
+  &:active {
+    background: $btn_bg_secondary_press;
+    color: $btn_text_secondary_press;
+    border: $btn_border_secondary_press;
+    path {
+      fill: $btn_text_secondary_press;
+    }
+  }
+
+  &:disabled , &:disabled:hover {
+    background: #ffffff;
+    color: #adadad;
+    border: 1px solid #adadad;
+
+    path {
+      fill: #adadad;
+    }
+
+  }
+}
+
+.button_dangerSecondary {
+  color: $status_color_fail;
+  border: 1px solid $status_color_fail;
+  path {
+    fill: $status_color_fail;
+  }
+
+  &:hover {
+    background: #fc4b6b;
+    border: 1px solid #fc4b6b;
+  }
+
+  &:active {
+    background: #fc5674;
+    border: 1px solid #fc5674;
+  }
+}
+
+.button_upload {
+  color: $highlight_color;
+  border: 1px solid $highlight_color;
+  path {
+    fill: $highlight_color;
+  }
+
+  &:hover {
+    background: $highlight_color;
+    border: 1px solid $highlight_color;
+  }
+
+  &:active {
+    background: $highlight_color;
+    border: 1px solid $highlight_color;
+  }
+}
+
+.button_back {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+
+  &:hover {
+    background: #f4f4f4;
+  }
+}
+
+.button_info {
+  background: none;
+  border: none;
+  color: $highlight_color;
+  display: flex;
+}
+
+.button_addInfo {
+  &:hover {
+    background: #f4f4f4;
+  }
+}
+
+.button_textInfo {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.button_iconInfo {
+  path {
+    stroke: $highlight_color;
+  }
+  &:hover {
+    path {
+      stroke: $hover_highlight_color;
+    }
+  }
+  &:active {
+    path {
+      stroke: $hover_highlight_color;
+    }
+  }
+  &:disabled {
+    path {
+      stroke: #adadad;
+    }
+  }
+}
+
+.button_reset {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border-radius: 6px;
+  font-size: 14px;
+
+  background: #f6f8fa;
+  border: none;
+  color: $primary_color;
+  cursor: pointer;
+
+  path {
+    fill: $primary_color;
+  }
+
+  &:hover {
+    background: #dddddd;
+    color: $primary_color;
+  }
+
+  &:disabled {
+    background: #f2f2f2;
+    border: none;
+    color: #adadad;
+
+    path {
+      fill: #adadad;
+    }
+  }
+}
+
+.button_closeCircle {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  border: none;
+  border-radius: 50%;
+  background: #d8d8d8;
+  cursor: pointer;
+}
+
+.button_close {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  border: none;
+  background: none;
+  border-radius: 6px;
+
+  cursor: pointer;
+}
+
+.button_collapse {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  border: none;
+  background-color: none;
+  background: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f4f4f4;
+  }
+
+  path {
+    stroke: black;
+  }
+
+  .button_collapse_rotate {
+    transform: rotate(-180deg);
+
+    /* Safari */
+    -webkit-transform: rotate(-180deg);
+
+    /* Firefox */
+    -moz-transform: rotate(-180deg);
+
+    /* IE */
+    -ms-transform: rotate(-180deg);
+
+    /* Opera */
+    -o-transform: rotate(-180deg);
+
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+}
+
+.button_reverse {
+  flex-direction: row-reverse;
+  gap: 10px;
+
+  div {
+    margin: 0 !important;
+  }
+}
+
+.button_delete {
+  path {
+    fill: $status_color_fail;
+  }
+}

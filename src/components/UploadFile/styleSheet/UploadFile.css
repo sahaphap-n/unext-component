@@ -1,0 +1,34 @@
+.uploadFile_dropFileBox {
+  border-radius: 6px;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.uploadFile_dropFileBox h5 {
+  font-weight: 600;
+  margin-bottom: 4px !important;
+  text-align: center;
+}
+.uploadFile_dropFileBox p {
+  color: rgba(0, 0, 0, 0.4509803922);
+  margin-bottom: 0 !important;
+  font-size: 12px;
+  text-align: center;
+}
+
+.uploadFile_borderHighLight {
+  border: 1px solid #1890ff;
+}
+
+.uploadFile_disabled {
+  cursor: not-allowed;
+}
+.uploadFile_disabled .contentGrayFrame_container {
+  background: #ececec;
+}
+.uploadFile_disabled .contentGrayFrame_container h5,
+.uploadFile_disabled .contentGrayFrame_container p {
+  color: #b2b2b2;
+}
+.uploadFile_disabled .contentGrayFrame_container path {
+  fill: #b2b2b2;
+}/*# sourceMappingURL=UploadFile.css.map */

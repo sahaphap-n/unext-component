@@ -1,0 +1,66 @@
+@import '../../../variables';
+
+.status_box {
+  display: inline-block !important;
+  text-align: center;
+  border-radius: 10px;
+  min-height: 20px;
+  padding: 1px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.status_primary {
+  border: none;
+  color: #ffff;
+
+  &[data-status='success'] {
+    background: $status_color_success;
+  }
+
+  &[data-status='progress'] {
+    background: $status_color_warning;
+  }
+
+  &[data-status='cancel'] {
+    background: $status_color_fail;
+  }
+
+  &[data-status='info'] {
+    background: $highlight_color;
+  }
+
+  &[data-status='expire'] {
+    background: #9a9a9a;
+  }
+}
+
+.status_secondary {
+  background: #ffff;
+
+  &[data-status='success'] {
+    border: 1px solid $status_color_success;
+    color: $status_color_success;
+  }
+
+  &[data-status='progress'] {
+    border: 1px solid $status_color_warning;
+    color: $status_color_warning;
+  }
+
+  &[data-status='cancel'] {
+    border: 1px solid $status_color_fail;
+    color: $status_color_fail;
+  }
+
+  &[data-status='info'] {
+    border: 1px solid $highlight_color;
+    color: $highlight_color;
+  }
+
+  &[data-status='expire'] {
+    border: 1px solid #9a9a9a;
+    color: #9a9a9a;
+  }
+}

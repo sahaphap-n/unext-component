@@ -1,0 +1,20 @@
+.chapterList_header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+
+  .title_main {
+    color: #005c24;
+    margin-bottom: 0px;
+  }
+
+  .discription {
+    font-size: 12px;
+    margin-left: 4px;
+  }
+}
+
+.chapterList_frame {
+  display: grid;
+  row-gap: 16px;
+}

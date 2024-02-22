@@ -1,0 +1,28 @@
+.radioGroup_container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  .radioGroup_radioItem {
+    display: flex;
+    align-items: center;
+    line-height: 21px;
+
+    .radioGroup_radio {
+      margin-bottom: 2px;
+    }
+
+    .radioGroup_label {
+      margin-bottom: 0 !important;
+      padding-left: 10px;
+      // line-height: 21px;
+    }
+  }
+}
+
+
+.radioHorizontalStyle{
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 16px;
+}

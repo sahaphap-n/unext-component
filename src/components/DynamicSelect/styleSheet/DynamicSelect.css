@@ -1,0 +1,54 @@
+.dynamicSelect_container {
+  position: relative;
+}
+.dynamicSelect_container .iconBox {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  left: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dynamicSelect_container .selectBox {
+  cursor: context-menu;
+  background-image: url("../asset/arrowDown.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+.dynamicSelect_container .selectBox:-moz-read-only {
+  background-color: #fff;
+}
+.dynamicSelect_container .selectBox:read-only {
+  background-color: #fff;
+}
+.dynamicSelect_container .selectBox:disabled {
+  background-color: #f1f1f2;
+}
+.dynamicSelect_container button.close {
+  font-size: 40px !important;
+  color: #b7b7c0 !important;
+}
+.dynamicSelect_container .rbt-menu {
+  scrollbar-width: thin;
+  scrollbar-color: #ddd rgba(0, 0, 0, 0);
+}
+.dynamicSelect_container .rbt-menu::-webkit-scrollbar {
+  width: 5px;
+}
+.dynamicSelect_container .rbt-menu::-webkit-scrollbar-track {
+  background: white;
+}
+.dynamicSelect_container .rbt-menu::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 5px;
+  opacity: 1;
+}
+.dynamicSelect_container .rbt-menu .dropdown-item {
+  overflow: visible !important;
+  padding-left: 14px !important;
+}
+.dynamicSelect_container .dropdown-menu {
+  z-index: 2 !important;
+  min-width: auto !important;
+}/*# sourceMappingURL=DynamicSelect.css.map */

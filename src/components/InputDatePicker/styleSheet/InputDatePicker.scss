@@ -1,0 +1,18 @@
+@import '../../../variables';
+
+.inputPicker_datePicker {
+  position: relative;
+
+  .icon {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+    cursor: pointer;
+  }
+
+  .disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    background-color:#f1f1f2;
+  }
+}

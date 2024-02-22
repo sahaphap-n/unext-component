@@ -1,0 +1,19 @@
+.buttonGroup_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .btn-box {
+    width: 110px;
+  }
+
+  .btn_center_box {
+    display: flex;
+    gap: 16px;
+  }
+
+  .btn_next {
+    flex-direction: row-reverse;
+    gap: 10px;
+  }
+}

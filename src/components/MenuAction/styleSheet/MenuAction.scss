@@ -1,0 +1,69 @@
+@import '../../../variables';
+
+.menuAction_list {
+  display: flex;
+  gap: 16px;
+
+  .tooltip_text {
+    flex-shrink: 0 !important;
+    text-align: center;
+  }
+}
+
+.menuAction_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  min-width: 32px;
+  border-radius: 6px;
+  font-size: 14px;
+
+  background: #f3f6f9;
+  border: none;
+  color: $primary_color;
+  cursor: pointer;
+
+  path {
+    fill: $primary_color;
+  }
+
+  .searchIcon {
+    path {
+      stroke: $primary_color;
+      fill: none;
+    }
+  }
+
+  .deleteIcon {
+    path {
+      fill: $status_color_fail;
+    }
+  }
+
+  &:hover {
+    background: #dddddd;
+  }
+
+  &:disabled {
+    background: #f2f2f2;
+    border: none;
+    color: #adadad;
+    cursor: not-allowed;
+
+    path {
+      fill: #adadad;
+    }
+
+    .searchIcon {
+      path {
+        stroke: #adadad;
+        fill: none;
+      }
+    }
+  }
+}
+
+.menuAction_have_text {
+  padding: 0 16px;
+}

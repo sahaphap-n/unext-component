@@ -1,0 +1,15 @@
+.formItem_vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.formItem_horizontal {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.formItem_input {
+  width: 100%;
+}/*# sourceMappingURL=FormItem.css.map */

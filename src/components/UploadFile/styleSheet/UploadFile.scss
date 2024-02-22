@@ -1,0 +1,40 @@
+@import '../../../variables';
+.uploadFile_dropFileBox {
+  border-radius: 6px;
+  border: 1px solid white;
+  cursor: pointer;
+
+  h5 {
+    font-weight: 600;
+    margin-bottom: 4px !important;
+    text-align: center;
+  }
+
+  p {
+    color: #00000073;
+    margin-bottom: 0 !important;
+    font-size: 12px;
+    text-align: center;
+  }
+}
+
+.uploadFile_borderHighLight {
+  border: 1px solid $highlight_color;
+}
+
+.uploadFile_disabled {
+  cursor: not-allowed;
+
+  .contentGrayFrame_container {
+    background: #ececec;
+
+    h5,
+    p {
+      color: #b2b2b2;
+    }
+
+    path {
+      fill: #b2b2b2;
+    }
+  }
+}

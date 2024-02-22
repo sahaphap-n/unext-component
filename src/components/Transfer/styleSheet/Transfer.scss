@@ -1,0 +1,22 @@
+.transfer_box {
+  min-height: 234px;
+  padding: 8px 0px;
+  border-radius: 6px;
+  border: 1px solid var(--field-enable-border-new, #dbdbdb);
+  background: var(--text-on-danger, #fff);
+}
+
+.transfer_layout{
+    grid-template-columns: 1fr 130px 1fr;
+    display: grid;
+    column-gap:20px
+}
+
+.transfer_button{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap:8px;
+  column-gap: 20px;
+
+}

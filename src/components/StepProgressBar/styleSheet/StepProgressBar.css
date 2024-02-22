@@ -1,0 +1,31 @@
+.stepProgressBar_box {
+  flex-shrink: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+}
+.stepProgressBar_box::before {
+  content: attr(data-no);
+  display: grid;
+  place-content: center;
+  color: #fff;
+  min-width: 21px;
+  min-height: 21px;
+  border-radius: 50%;
+  background-color: #e5eaee;
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #e5eaee;
+  line-height: initial;
+}
+.stepProgressBar_box:not(:last-child)::after {
+  content: "";
+  margin: 0 8px;
+  width: 40px;
+  height: 2px;
+  border-radius: 8px;
+  background-color: #e5eaee;
+}
+.stepProgressBar_box.active::before, .stepProgressBar_box.active:not(:last-child)::after {
+  background-color: #4ace8f;
+}/*# sourceMappingURL=StepProgressBar.css.map */

@@ -1,0 +1,27 @@
+@import '../../../variables';
+
+.noData_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.noData_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  max-width: 25rem;
+
+  .description {
+    text-align: center;
+  }
+
+  .default_image {
+    .child_primary {
+      fill: $primary_color;
+    }
+  }
+}

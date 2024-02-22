@@ -1,0 +1,65 @@
+@import '../../../variables';
+
+.dynamicSelect_container {
+  position: relative;
+
+  .iconBox {
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .selectBox {
+    cursor: context-menu;
+    background-image: url('../asset/arrowDown.svg');
+    background-repeat: no-repeat;
+    background-position: center right;
+
+    &:read-only {
+      background-color: #fff;
+    }
+    &:disabled {
+      background-color: #f1f1f2;
+    }
+  }
+
+  button.close {
+    font-size: 40px !important;
+    color: #b7b7c0 !important;
+  }
+
+  .rbt-menu {
+    //style สำหรับ เปลี่ยน scroll bar ให้เป็นแบบสีเทา
+
+    scrollbar-width: thin;
+    scrollbar-color: #ddd rgba(0, 0, 0, 0);
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: white;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #ddd;
+      border-radius: 5px;
+      opacity: 1;
+    }
+
+    .dropdown-item {
+      overflow: visible !important;
+      padding-left: 14px !important;
+    }
+  }
+
+  .dropdown-menu {
+    z-index: 2 !important;
+    min-width: auto !important;
+  }
+}

@@ -1,0 +1,29 @@
+@import '../../../variables';
+
+.categoryUploadCard_container {
+    display: flex;
+    flex-direction: column;
+    padding: 12px 16px;
+    gap: 12px;
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #1890FF;
+    border-radius: 10px;
+    position: relative;
+
+}
+
+.categoryUploadCard_Title {
+    font-weight: 700;
+    font-size: 14px;
+    color: $text_color;
+}
+
+.categoryUploadCard_sub {
+    font-weight: 400;
+    font-size: 12px;
+    color: #464E5F;
+    display: flex;
+    gap: 5px;
+
+}

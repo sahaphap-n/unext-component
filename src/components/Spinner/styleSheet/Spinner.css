@@ -1,0 +1,29 @@
+.spinner_box {
+  display: inline-block;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  border-top: 3px solid #82858E;
+  border-right: 3px solid #82858E;
+  border-bottom: 3px solid #82858E;
+  animation: spinner 0.75s linear infinite;
+}
+
+@keyframes spinner {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.spinner_sm {
+  width: 16px;
+  height: 16px;
+}
+
+.spinner_md {
+  width: 24px;
+  height: 24px;
+}
+
+.spinner_lg {
+  width: 32px;
+  height: 32px;
+}/*# sourceMappingURL=Spinner.css.map */

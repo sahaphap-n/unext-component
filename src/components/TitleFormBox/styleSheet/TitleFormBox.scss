@@ -1,0 +1,16 @@
+.titleFormBox_hearder {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.titleFormBox_subtitleBox {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+
+  .titleFormBox_subtile {
+    font-size: 14px;
+    font-weight: 600;
+  }
+}

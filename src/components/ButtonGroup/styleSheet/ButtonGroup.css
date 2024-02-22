@@ -1,0 +1,16 @@
+.buttonGroup_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.buttonGroup_container .btn-box {
+  width: 110px;
+}
+.buttonGroup_container .btn_center_box {
+  display: flex;
+  gap: 16px;
+}
+.buttonGroup_container .btn_next {
+  flex-direction: row-reverse;
+  gap: 10px;
+}/*# sourceMappingURL=ButtonGroup.css.map */

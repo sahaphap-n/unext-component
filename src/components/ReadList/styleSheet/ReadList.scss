@@ -1,0 +1,20 @@
+@import '../../../variables';
+
+.readList_detail_box {
+  display: flex;
+  gap: 15px;
+
+  .label {
+    flex-shrink: 0;
+    font-weight: 600 !important;
+  }
+
+  .label_card {
+    font-size: 14px;
+  }
+
+  .label_form {
+    font-size: 14px;
+  }
+
+}

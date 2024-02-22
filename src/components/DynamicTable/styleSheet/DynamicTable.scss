@@ -1,0 +1,89 @@
+@import '../../../variables';
+
+.dynamicTable {
+  border: 1px solid #eaecf0;
+  border-radius: 10px;
+  border-collapse: collapse;
+
+  table {
+    width: 100%;
+    border-radius: 10px;
+    // overflow: hidden;
+    background: #fff;
+    padding: 0 !important;
+    vertical-align: middle;
+
+    thead {
+      th {
+        background: #f3f9ff;
+        color: #95a0a8;
+      }
+
+      .sortBox {
+        .sorter {
+          margin-left: 10px;
+
+          &[data-sorttype='asc'] {
+            .arrow-up {
+              fill: $highlight_color;
+            }
+          }
+
+          &[data-sorttype='desc'] {
+            .arrow-down {
+              fill: $highlight_color;
+            }
+          }
+        }
+
+        &:hover {
+          background: $hover_options_color;
+          cursor: pointer;
+        }
+      }
+    }
+
+    tbody {
+      .row_can_click {
+        &:hover {
+          background: $hover_options_color;
+          cursor: pointer;
+        }
+      }
+
+      .row_checked {
+        background: $primary_color_bg;
+      }
+    }
+
+    tfoot {
+      td {
+        font-weight: 600;
+      }
+    }
+
+    th,
+    td {
+      padding: 10px;
+      border-bottom: 1px solid #eaecf0;
+      font-weight: 500;
+      line-height: 140%;
+    }
+
+    .none-hover:hover {
+      background: #fff !important;
+    }
+  }
+
+  .bordered {
+    th,
+    td {
+      border: 1px solid #eaecf0;
+    }
+  }
+
+  .pagination-container {
+    width: 100%;
+    padding: 10px;
+  }
+}

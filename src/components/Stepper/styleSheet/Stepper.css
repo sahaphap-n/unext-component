@@ -1,0 +1,92 @@
+section#stepper {
+  --circle-size: 32px;
+  --active-color: #1890ff;
+  --transition-duration: 300ms;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+}
+section#stepper .step-progress {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+}
+section#stepper .step-progress .step-no {
+  position: relative;
+  min-height: var(--circle-size);
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background var(--transition-duration) ease;
+}
+section#stepper .step-progress .step-no::before {
+  content: attr(data-step);
+  position: absolute;
+  border-radius: 50%;
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-color: #f0f0f0;
+  color: rgba(0, 0, 0, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+}
+section#stepper .step-progress .step-label {
+  font-size: 14px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  transition: color var(--transition-duration) ease;
+}
+section#stepper .step-progress.active .step-no::before {
+  background-color: #1890ff;
+  color: #fff;
+}
+section#stepper .step-progress.active .step-no[data-progress]::before {
+  width: calc(100% - 4px);
+  aspect-ratio: 1/1;
+  border: 2px solid #fff;
+}
+section#stepper .step-progress.finished[role=button] {
+  cursor: pointer;
+}
+section#stepper .step-progress.finished[role=button]:hover .step-no::before {
+  border-color: var(--active-color);
+}
+section#stepper .step-progress.finished[role=button]:hover .step-label {
+  color: var(--active-color);
+}
+section#stepper .step-progress.finished .step-no::before {
+  content: "";
+  transition: border-color var(--transition-duration) ease;
+  background: url("../assets/checked.svg") no-repeat center, #e6f4ff;
+}
+section#stepper .step-progress.finished.active .step-no::before {
+  content: attr(data-step);
+  background-color: #1890ff;
+  color: #fff;
+  width: 100% !important;
+  aspect-ratio: 1/1 !important;
+  border: 0;
+}
+section#stepper .step-progress:not(:last-child) {
+  flex: 1;
+}
+section#stepper .step-progress:not(:last-child)::after {
+  content: "";
+  flex-grow: 1;
+  height: 2px;
+  background-color: #f0f0f0;
+  margin: 0 2.5%;
+  min-width: 40px;
+}
+section#stepper .step-progress:not(:last-child).lineActive::after {
+  background-color: var(--active-color);
+}/*# sourceMappingURL=Stepper.css.map */

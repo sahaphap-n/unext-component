@@ -1,0 +1,32 @@
+.label_box {
+  color: #171717;
+  font-weight: 600;
+  margin-bottom: 0 !important;
+}
+.label_box .status {
+  display: inline;
+}
+.label_box .required {
+  color: #f0536f;
+}
+.label_box .colon {
+  color: #171717;
+}
+.label_box .margin_left {
+  margin-left: 0.5rem;
+}
+
+.label_status_tooltip {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: none;
+}
+
+.label_status_active {
+  background-color: #4ace8f;
+}
+
+.label_status_inactive {
+  background-color: #f0536f;
+}/*# sourceMappingURL=Label.css.map */

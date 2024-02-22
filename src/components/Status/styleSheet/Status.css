@@ -1,0 +1,54 @@
+.status_box {
+  display: inline-block !important;
+  text-align: center;
+  border-radius: 10px;
+  min-height: 20px;
+  padding: 1px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.status_primary {
+  border: none;
+  color: white;
+}
+.status_primary[data-status=success] {
+  background: #4ace8f;
+}
+.status_primary[data-status=progress] {
+  background: #f9c153;
+}
+.status_primary[data-status=cancel] {
+  background: #f0536f;
+}
+.status_primary[data-status=info] {
+  background: #1890ff;
+}
+.status_primary[data-status=expire] {
+  background: #9a9a9a;
+}
+
+.status_secondary {
+  background: white;
+}
+.status_secondary[data-status=success] {
+  border: 1px solid #4ace8f;
+  color: #4ace8f;
+}
+.status_secondary[data-status=progress] {
+  border: 1px solid #f9c153;
+  color: #f9c153;
+}
+.status_secondary[data-status=cancel] {
+  border: 1px solid #f0536f;
+  color: #f0536f;
+}
+.status_secondary[data-status=info] {
+  border: 1px solid #1890ff;
+  color: #1890ff;
+}
+.status_secondary[data-status=expire] {
+  border: 1px solid #9a9a9a;
+  color: #9a9a9a;
+}/*# sourceMappingURL=Status.css.map */

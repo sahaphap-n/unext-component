@@ -1,0 +1,53 @@
+.sectionStatusBar_container {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 50px 1fr;
+  height: 44px;
+  border-radius: 10px;
+  align-items: center;
+}
+.sectionStatusBar_container h6 {
+  margin-bottom: 0px !important;
+}
+.sectionStatusBar_container .category_no {
+  display: flex;
+  gap: 8px;
+}
+.sectionStatusBar_container .category_no .circle_box_outer {
+  width: 28px;
+  height: 28px;
+}
+.sectionStatusBar_container .category_no .circle_box_outer[data-status="1"] {
+  background-color: #e5eaee;
+}
+.sectionStatusBar_container .category_no .circle_box_outer[data-status="2"] {
+  background-color: white;
+}
+.sectionStatusBar_container .category_no .circle_box_outer[data-status="3"] {
+  background-color: white;
+}
+.sectionStatusBar_container .category_no .circle_box_outer .inner1 {
+  width: 26px;
+  height: 26px;
+  background-color: white;
+}
+.sectionStatusBar_container .category_no .circle_box_outer .inner1 .inner2 {
+  width: 24px;
+  height: 24px;
+  color: white;
+}
+.sectionStatusBar_container .category_no .circle_box_outer .inner1 .inner2[data-status="1"] {
+  background-color: #e5eaee;
+}
+.sectionStatusBar_container .category_no .circle_box_outer .inner1 .inner2[data-status="2"] {
+  background-color: #f9c153;
+}
+.sectionStatusBar_container .category_no .circle_box_outer .inner1 .inner2[data-status="3"] {
+  background-color: #4ace8f;
+}
+.sectionStatusBar_container .category_no .circle {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=SectionStatusBar.css.map */

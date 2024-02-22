@@ -1,0 +1,63 @@
+.searchBarCurr_container_search {
+  background: #ffffff;
+  width: 100%;
+  /* height: 100%; */
+  border-radius: 6px;
+  padding: 24px;
+  box-shadow: 0px 0px 20px rgba(56, 71, 109, 0.03);
+}
+.searchBarCurr_container_search h3 {
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  line-height: 21px;
+}
+.searchBarCurr_container_search .button_primary path {
+  fill: none !important;
+}
+
+.searchBarCurr_radio_box {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.searchBarCurr_radio_container {
+  gap: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.searchBarCurr_radio {
+  display: flex;
+  gap: 10px;
+}
+
+.searchBarCurr_radio_input {
+  border: 2px solid #4d9fff;
+}
+
+.searchBarCurr_typeahead input {
+  font-size: 14px;
+  color: #000000;
+}
+.searchBarCurr_typeahead .rbt-highlight-text {
+  color: #000000;
+}
+
+.searchBarCurr_required {
+  color: #f0536f !important;
+}
+.searchBarCurr_required::-moz-placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #f0536f !important;
+  opacity: 1; /* Firefox */
+}
+.searchBarCurr_required::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #f0536f !important;
+  opacity: 1; /* Firefox */
+}
+.searchBarCurr_required:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #f0536f !important;
+}
+.searchBarCurr_required::-ms-input-placeholder { /* Microsoft Edge */
+  color: #f0536f !important;
+}/*# sourceMappingURL=SearchBar.css.map */

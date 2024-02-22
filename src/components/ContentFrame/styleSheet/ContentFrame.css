@@ -1,0 +1,17 @@
+.contentFrame_container {
+  width: 100%;
+  padding: 30px;
+}
+.contentFrame_container .contentFrame_title_primary {
+  color: #45ba73;
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  line-height: 21px;
+  margin-bottom: 0 !important;
+}
+.contentFrame_container .contentFrame_body {
+  min-height: calc(100vh - 630px);
+}
+.contentFrame_container .footer {
+  margin-top: 14px;
+}/*# sourceMappingURL=ContentFrame.css.map */

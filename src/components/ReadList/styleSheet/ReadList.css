@@ -1,0 +1,14 @@
+.readList_detail_box {
+  display: flex;
+  gap: 15px;
+}
+.readList_detail_box .label {
+  flex-shrink: 0;
+  font-weight: 600 !important;
+}
+.readList_detail_box .label_card {
+  font-size: 14px;
+}
+.readList_detail_box .label_form {
+  font-size: 14px;
+}/*# sourceMappingURL=ReadList.css.map */

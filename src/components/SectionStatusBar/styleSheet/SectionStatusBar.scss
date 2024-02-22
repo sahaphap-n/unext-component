@@ -1,0 +1,69 @@
+@import '../../../variables';
+
+.sectionStatusBar_container {
+  display: grid;
+  // padding: 8px 16px;
+  gap: 12px;
+  grid-template-columns: 50px 1fr;
+  height: 44px;
+  // background: #f8fafd;
+  border-radius: 10px;
+  align-items: center;
+
+  h6 {
+    margin-bottom: 0px !important;
+  }
+  .category_no {
+    display: flex;
+    gap: 8px;
+
+    //three concentric circles
+    .circle_box_outer {
+      width: 28px;
+      height: 28px;
+
+      &[data-status='1'] {
+        background-color: #e5eaee;
+      }
+
+      &[data-status='2'] {
+        background-color: white;
+      }
+
+      &[data-status='3'] {
+        background-color: white;
+      }
+
+      .inner1 {
+        width: 26px;
+        height: 26px;
+        background-color: white;
+
+        .inner2 {
+          width: 24px;
+          height: 24px;
+          color: white;
+
+          &[data-status='1'] {
+            background-color: #e5eaee;
+          }
+
+          &[data-status='2'] {
+            background-color: $status_color_warning;
+          }
+
+          &[data-status='3'] {
+            background-color: $status_color_success;
+          }
+        }
+      }
+    }
+
+    .circle {
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

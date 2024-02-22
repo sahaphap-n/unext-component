@@ -1,0 +1,179 @@
+//main colors -----------------------------------------------------------------
+$primary_color: #45ba73;
+$secondary_color: #ffffff;
+// $secondary_color1: #ffffff;
+$status_color_success: #4ace8f;
+$status_color_warning: #f9c153;
+$status_color_fail: #f0536f;
+$status_color_normal: #89b6ff;
+$highlight_color: #1890ff;
+$white_color: #ffffff;
+
+$primary_color_bg: #45ba7326;
+$status_color_normal_bg: #89b6ff26;
+$status_color_success_bg: #4ace8f26;
+$status_color_warning_bg: #f9c15326;
+$status_color_fail_bg: #f0536f26;
+
+$third_color: #fff7e9;
+$fourth_color: #f0f8ff;
+$hover_color: #02b371;
+$hover_highlight_color: #0d73d3;
+$hover_options_color: #0000000a;
+$primary_active_color: #02a468;
+$form_focus_color: #b6dcff;
+$label_color: #171717;
+
+//bg-colors --------------------------------------------------------------------
+$background_color: $white_color;
+$background_color_2: #f5f5f5;
+$background_color_3: $primary_color;
+
+//text-colors ------------------------------------------------------------------
+$text_color: #000000;
+$text_color_3: $primary_color;
+$text_color_secondary: $white_color;
+$text_color_info: $highlight_color;
+$text_color_disable: #b5b5c3;
+
+//button ----------------------------------------------------------------------
+// primary button
+//defult
+$btn_bg_primary: $primary_color;
+$btn_text_primary: $white_color;
+$btn_border_primary: 1px solid $primary_color;
+
+//hover
+$btn_bg_primary_hover: $hover_color;
+$btn_text_primary_hover: $white_color;
+$btn_border_primary_hover: 1px solid $primary_color;
+
+//press
+$btn_bg_primary_press: $primary_active_color;
+$btn_text_primary_press: $white_color;
+$btn_border_primary_press: 1px solid $primary_color;
+
+//secondary button
+//defualt
+$btn_bg_secondary: $white_color;
+$btn_text_secondary: $primary_color;
+$btn_border_secondary: 1px solid $primary_color;
+
+//hover
+$btn_bg_secondary_hover: $hover_color;
+$btn_text_secondary_hover: $white_color;
+$btn_border_secondary_hover: 1px solid $primary_color;
+
+//press
+$btn_bg_secondary_press: $primary_active_color;
+$btn_text_secondary_press: $white_color;
+$btn_border_secondary_press: 1px solid $primary_color;
+
+//border-colors ----------------------------------------------------------------
+$border_color: rgba(0, 0, 0, 0.07);
+$border_color_2: #e5eaee;
+
+//layout -----------------------------------------------------------------------
+$sidebar_color_bg: $secondary_color;
+$sidebar_color_text_highlight: $primary_color;
+$sidebar_color_focus_bg: $primary_color;
+$sidebar_color_focus_text: $white_color;
+
+//typography -------------------------------------------------------------------
+@mixin typography($fontSize, $fontWeight) {
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+}
+
+@mixin h1() {
+  @include typography(24px, 700);
+}
+@mixin h2() {
+  @include typography(24px, 400);
+}
+@mixin h3() {
+  @include typography(20px, 700);
+}
+@mixin h4() {
+  @include typography(20px, 400);
+}
+@mixin h5() {
+  @include typography(18px, 700);
+}
+@mixin h6() {
+  @include typography(18px, 400);
+}
+
+@mixin text1() {
+  @include typography(16px, 700);
+}
+@mixin text2() {
+  @include typography(16px, 400);
+}
+@mixin text3() {
+  @include typography(14px, 700);
+}
+@mixin text4() {
+  @include typography(14px, 400);
+}
+
+@mixin caption() {
+  @include typography(12px, 400);
+}
+
+$regular_text_size: 1.4rem;
+$regular_extra_text_size: 1.6rem;
+$sub_middle_text_size: 1.8rem;
+$middle_text_size: 2rem;
+$large_text_size: 2.4rem;
+$small_text_size: 1.2rem;
+
+//gap margin paddimg-size --------------------------------------------------------
+$small_gap_size: 1.6rem;
+$middle_gap_size: 2.4rem;
+$large_gap_size: 3rem;
+
+//web responsive -----------------------------------------------------------------
+$breakpoint_tablet: 1023px;
+$breakpoint_phone: 767px;
+
+@mixin screen_tablet {
+  @media (max-width: $breakpoint_tablet) {
+    @content;
+  }
+}
+
+@mixin screen_phone {
+  @media (max-width: $breakpoint_phone) {
+    @content;
+  }
+}
+
+//text func ----------------------------------------------------------------------
+@mixin standard_text {
+  color: $text_color;
+  font-size: $regular_text_size;
+}
+
+@mixin large_text {
+  color: $text_color;
+  font-size: $large_text_size;
+}
+
+@mixin hilighted_text {
+  color: $primary_color;
+  font-size: $large_text_size;
+}
+
+@mixin custom_text($color, $size) {
+  color: $color;
+  font-size: $size;
+}
+
+//flexbox func -----------------------------------------------------------------
+@mixin flexCenter($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}

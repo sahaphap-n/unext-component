@@ -1,0 +1,48 @@
+@import '../../../variables';
+
+.autocomplete_container {
+  position: relative;
+
+  .search_icon {
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 3px;
+  }
+
+
+  button.close {
+    font-size: 40px !important;
+    color: #b7b7c0 !important;
+  }
+
+  .rbt-menu {
+    //style สำหรับ เปลี่ยน scroll bar ให้เป็นแบบสีเทา
+
+    scrollbar-width: thin;
+    scrollbar-color: #ddd rgba(0, 0, 0, 0);
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: white;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #ddd;
+      border-radius: 5px;
+      opacity: 1;
+    }
+
+    .dropdown-item {
+      overflow: visible !important;
+    }
+  }
+
+  .dropdown-menu {
+    z-index: 2 !important;
+    min-width: auto !important;
+  }
+}

@@ -1,0 +1,160 @@
+@import '../../../variables';
+
+.alertModal_container {
+  text-align: center;
+  padding: 20px;
+  width: 450px;
+  height: 394px;
+
+  @include screen_tablet {
+    width: 320px;
+    height: 320px;
+  }
+
+  @include screen_phone {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+.alertModal_close_icon {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.alertModal_text_title {
+  text-align: center;
+  margin-bottom: 16px;
+  margin-top: 16px;
+
+  @include screen_tablet {
+    font-size: 16px;
+  }
+
+  @include screen_phone {
+    font-size: 16px;
+  }
+}
+
+.alertModal_text_desc {
+  color: #808080;
+  text-align: center;
+  font-weight: 400;
+  width: 100%;
+  font-size: 14px;
+
+  @include screen_tablet {
+    font-size: 14px;
+  }
+
+  @include screen_phone {
+    font-size: 14px;
+  }
+}
+
+.alertModal_button_confirm {
+  background: $primary_color;
+  border-radius: 6px;
+  border: none;
+  padding: 5px;
+  color: $background_color;
+  font-size: 14px;
+  margin-top: 24px;
+  width: 140px;
+  height: 40px;
+
+  @include screen_tablet {
+    width: 120px;
+    height: 30px;
+  }
+
+  @include screen_phone {
+    width: 120px;
+    height: 30px;
+  }
+}
+
+.alertModal_button_confirm:hover {
+  background: $hover_color;
+}
+
+.confirmModal_buttom_btn_container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+// button
+.confirmModal_btn_primary {
+  background: $primary_color;
+  border-radius: 6px;
+  border: none;
+  padding: 5px;
+  color: $text_color_secondary;
+  font-size: 14px;
+  width: 140px;
+  height: 40px;
+
+  @include screen_tablet {
+    width: 120px;
+    height: 30px;
+  }
+
+  @include screen_phone {
+    width: 120px;
+    height: 30px;
+  }
+}
+
+.confirmModal_btn_primary:hover {
+  background-color: $hover_color;
+}
+
+.confirmModal_btn_secondary {
+  background: $background_color;
+  border-radius: 6px;
+  padding: 5px;
+  color: $primary_color;
+  border: 1px solid $primary_color;
+  font-size: 14px;
+  width: 140px;
+  height: 40px;
+
+  @include screen_tablet {
+    width: 120px;
+    height: 30px;
+  }
+
+  @include screen_phone {
+    width: 120px;
+    height: 30px;
+  }
+
+  path {
+    fill: $primary_color;
+  }
+}
+
+.confirmModal_btn_secondary:hover {
+  background: $primary_color;
+  border: none;
+  color: $text_color_secondary;
+
+  path {
+    fill: $text_color_secondary;
+  }
+}
+
+.alertModal_image {
+  height: 186px;
+  display: grid;
+  place-content: center;
+
+  .primary_color {
+    fill: $primary_color;
+  }
+}

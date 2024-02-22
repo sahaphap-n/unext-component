@@ -1,0 +1,17 @@
+.viewPageLayout_nodata {
+  background: #ffffff;
+  border-radius: 6px;
+  width: 100%;
+  height: calc(60vh + 50px);
+}
+
+.viewPageLayout_card_box {
+  height: 60vh;
+  // margin-top: 18px;
+  padding: 2px 16px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

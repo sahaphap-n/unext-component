@@ -1,0 +1,118 @@
+@import '../../../variables';
+
+.tooltip_parent {
+  position: relative !important;
+  cursor: pointer;
+  min-width: 0px;
+  min-height: 0px;
+
+  .tooltip_children {
+    display: none;
+  }
+
+  &:hover {
+    .tooltip_children {
+      display: flex;
+      justify-content: center;
+      background-color: #353535;
+      border-radius: 5px;
+      position: absolute;
+      z-index: 999;
+      padding: 5px 10px;
+      min-width: 30px;
+      min-height: 10px;
+      cursor: default;
+
+      &::after {
+        content: '';
+        position: absolute;
+        border-width: 5px;
+        border-style: solid;
+      }
+
+      &[data-placement='top'] {
+        bottom: 130%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        &::after {
+          top: 100%;
+          left: 50%;
+          margin-left: -5px;
+          border-color: #353535 transparent transparent transparent;
+        }
+      }
+
+      &[data-placement='bottom'] {
+        top: 130%;
+        left: 50%;
+        transform: translateX(-50%);
+
+        &::after {
+          bottom: 100%;
+          left: 50%;
+          margin-left: -5px;
+          border-color: transparent transparent #353535 transparent;
+        }
+      }
+
+      &[data-placement='left'] {
+        right: 130%;
+        top: 50%;
+        transform: translateY(-50%);
+
+        &::after {
+          left: 100%;
+          bottom: 50%;
+          margin-bottom: -5px;
+          border-color: transparent transparent transparent #353535;
+        }
+      }
+
+      &[data-placement='right'] {
+        left: 130%;
+        top: 50%;
+        transform: translateY(-50%);
+
+        &::after {
+          right: 100%;
+          bottom: 50%;
+          margin-bottom: -5px;
+          border-color: transparent #353535 transparent transparent;
+        }
+      }
+    }
+  }
+}
+
+.tooltip_menu_list_box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: default;
+  margin: 5px 10px;
+  color: $text_color_secondary;
+}
+
+.tooltip_menu_icon_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  max-width: 20px;
+  max-height: 20px;
+}
+
+.tooltip_menu_label {
+  color: $text_color_secondary;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.tooltip_text {
+  color: $text_color_secondary;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 21px;
+  margin: 0 8px;
+}

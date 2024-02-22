@@ -1,0 +1,38 @@
+@import '../../../variables';
+
+.label_box {
+  color: $label_color;
+  font-weight: 600;
+  margin-bottom: 0 !important;
+
+  .status {
+    display: inline;
+  }
+
+  .required {
+    color: $status_color_fail;
+  }
+
+  .colon {
+    color: $label_color;
+  }
+
+  .margin_left {
+    margin-left: 0.5rem;
+  }
+}
+
+.label_status_tooltip {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: none;
+}
+
+.label_status_active {
+  background-color: $status_color_success;
+}
+
+.label_status_inactive {
+  background-color: $status_color_fail;
+}

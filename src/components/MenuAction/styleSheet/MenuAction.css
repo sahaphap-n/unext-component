@@ -1,0 +1,52 @@
+.menuAction_list {
+  display: flex;
+  gap: 16px;
+}
+.menuAction_list .tooltip_text {
+  flex-shrink: 0 !important;
+  text-align: center;
+}
+
+.menuAction_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  min-width: 32px;
+  border-radius: 6px;
+  font-size: 14px;
+  background: #f3f6f9;
+  border: none;
+  color: #45ba73;
+  cursor: pointer;
+}
+.menuAction_button path {
+  fill: #45ba73;
+}
+.menuAction_button .searchIcon path {
+  stroke: #45ba73;
+  fill: none;
+}
+.menuAction_button .deleteIcon path {
+  fill: #f0536f;
+}
+.menuAction_button:hover {
+  background: #dddddd;
+}
+.menuAction_button:disabled {
+  background: #f2f2f2;
+  border: none;
+  color: #adadad;
+  cursor: not-allowed;
+}
+.menuAction_button:disabled path {
+  fill: #adadad;
+}
+.menuAction_button:disabled .searchIcon path {
+  stroke: #adadad;
+  fill: none;
+}
+
+.menuAction_have_text {
+  padding: 0 16px;
+}/*# sourceMappingURL=MenuAction.css.map */
