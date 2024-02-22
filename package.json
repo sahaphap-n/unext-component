@@ -8,7 +8,7 @@
     "dist"
   ],
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/sahaphap-n"
+    "@sahaphap-n:registry": "https://npm.pkg.github.com"
   },
   "dependencies": {
     "@rollup/plugin-babel": "^6.0.4",
